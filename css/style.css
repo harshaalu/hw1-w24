@@ -1,67 +1,108 @@
-/*Add padding and margin to space out the page.
-Make the font larger too.*/
-body{
-	margin:1%;
-	font-size:125%;
+body {
+    font-family: Arial, Verdana, sans-serif;
+    background-color: #000000;
+    color: #FFFFFF;
+    margin: 20px 20px 0 20px;
+    line-height: 1.5;
 }
 
-/*Make the h1 heading bigger with a bold font*/
-h1{
-	font-size: 2em; 
-	font-weight: bold;
+h1 {
+    font-size: 42px;
+    padding: 15px;
+    text-align: center;
 }
 
-.active{
-	background: white;
-    text-transform: uppercase;
-	text-align: center;
+h2 {
+    font-size: 30px; 
+    color: #0D0D0D; 
+    text-align: center; 
 }
 
-.active a{
-	text-decoration: none;;
+h2.correct {
+    font-size: 39px;
+    color: #0D0D0D;
+    text-align: inherit; /* Allows inheritance of text alignment from parent */
 }
 
-/*Style the images*/
-img{
-    height: 150px;
-	width:auto;
-    border: 3px solid blue;
-    padding: 25px;
-    border-radius: 20px;
-    margin: 5px;
-	margin-left: 10%
+.blue h2 {
+    color: #C4C4C4 !important;  /* Ensures this color has precedence */
 }
 
-/*Make the h2 heading match h1*/
-h2{
-	font-size: 2em; 
-	font-weight: bold;
+p {
+    font-size: 24px;
+    padding: 10px 0 0 10px;
 }
 
-/*Improve the spacing for paragraphs AND headings*/
-p, h1, h2 {
-    padding: 10px;
+p.correct {
+    font-size: 29.4px;
+    padding: 10px 0 0 10px;
 }
 
-/*Add borders around the main components and some
-space too*/
-header, nav, main, footer{
-	border: 3px solid red;
-	margin: 10px 0;
+img {
+    width: 250px;
+    display: block;
+    margin: auto;
+    border: 10px dashed #FFFFFF;
 }
 
-
-/*Change the styling for all of the list 
-items in the nav section*/
-nav ul li{
-	background-color: #ECFF4D;
-	padding:10px;
-	width:25%;
-	border:1px solid black;
-	display: inline-block;
-	width: 20%;
+div {
+    min-height: 125px;
+    padding: 20px;
+    border: 3px solid #FFFFFF; /* Default white border for all divs */
 }
 
-/*Added this so the links stay the same color*/
-a:visited{color:#0000FF}
+.rounded-top {
+    border-radius: 15px 15px 0 0;  /* Rounded top corners */
+}
 
+.introduction {
+    border-radius: 15px; 
+    margin-top: 15px;
+    line-height: 2; 
+}
+
+.introduction, .red, .blue, .yellow, .green {
+    text-align: inherit; /* Ensures text alignment is inherited from specific class styles */
+}
+
+.red {
+    background-color: #FF0000;
+    text-align: right;
+    margin-left: 50px;
+    border-bottom: 2px solid #FFFFFF;
+    border-left: 5px solid #FFFFFF;
+}
+
+.blue {
+    background-color: #0000FF;
+    text-align: left;
+    margin-right: 50px;
+    border-right: 5px solid #FFFFFF;
+    border-top: 2px solid #FFFFFF;
+    color: #C4C4C4;
+}
+
+.yellow {
+    background-color: #FFFF00;
+    text-align: right;
+    margin-left: 50px;
+    border-bottom: 2px solid #FFFFFF;
+    border-left: 5px solid #FFFFFF;
+    color: #707070;
+}
+
+.green {
+    background-color: #008500;
+    text-align: left;
+    margin-right: 50px;
+    border-right: 5px solid #FFFFFF;
+    border-top: 2px solid #FFFFFF;
+}
+
+footer {
+    background: linear-gradient(0deg, #000000, #0000ff 25%, #0066ff 70%, #000000);
+    border: 5px solid #FFFFFF;
+    text-align: right;
+    padding: 15px;
+    font-size: 20px;
+}
